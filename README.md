@@ -1,7 +1,7 @@
 # SA
 ---
 ## 思路
-* 不同于以往将attention层增加在分类器上，针对情感分类的特点：只有部分 __情感单词及副词__ 对结果决定情感分类结果，提出新的基于注意力的情感分类模型，在embeddings层增加注意力，__学习单词对情感分类的重要程度__。
+* 不同于以往将attention直接加在分类器上，针对情感分类的特点：只有部分 __情感单词及副词__ 决定情感分类结果，提出新的基于注意力的情感分类模型，在embeddings层增加注意力机制，__学习单词对情感分类的重要程度__。
 * 传统模型： input layer-> embeddings layer -> LSTM layer -> attention layer -> predict layer.
 * 新模型：    input layer-> embeddings layer + attention layer -> sum layer  -> predict layer.
 
